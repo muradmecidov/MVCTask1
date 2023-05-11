@@ -1,0 +1,13 @@
+﻿@using WebTask1.Models;
+@model List<Teacher>
+@{
+    Layout = "_Layout";
+}
+@foreach (Teacher teacher in Model)
+{
+
+		<p>    	Id: @teacher.Id	 				
+				Name:  @teacher.Name	
+				Salary:  @teacher.Salary		
+		</p>
+}

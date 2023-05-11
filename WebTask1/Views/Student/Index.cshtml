@@ -1,0 +1,17 @@
+﻿@using WebTask1.Models;
+@model List<Student>
+@{
+    ViewData["Title"] = "Stundet";
+
+}
+
+@foreach (Student item in Model)
+{
+				<p>  
+					Id @item.Id 
+					Name @item.Name             
+					Surname @item.Surname           
+					Age @item.Age
+		                 
+		       </p>
+}

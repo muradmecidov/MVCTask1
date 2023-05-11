@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Group";
+
+}
+
+@foreach(Group group in Model)
+{
+<pre> 
+@group.Id
+Name @group.Name 
+</pre>
+}
